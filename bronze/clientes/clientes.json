@@ -1,0 +1,12 @@
+[
+    {"cliente_id":1,"nome":"Alice","idade":25,"cidade":"SP"},
+    {"cliente_id":2,"nome":"Bruno","idade":34,"cidade":"RJ"},
+    {"cliente_id":3,"nome":"Carlos","idade":45,"cidade":"BH"},
+    {"cliente_id":4,"nome":"Daniela","idade":29,"cidade":"SP"},
+    {"cliente_id":5,"nome":"Eduardo","idade":38,"cidade":"POA"},
+    {"cliente_id":6,"nome":"Fernanda","idade":41,"cidade":"RJ"},
+    {"cliente_id":7,"nome":"Gustavo","idade":33,"cidade":"BH"},
+    {"cliente_id":8,"nome":"Helena","idade":27,"cidade":"POA"},
+    {"cliente_id":9,"nome":"Igor","idade":50,"cidade":"SP"},
+    {"cliente_id":10,"nome":"Juliana","idade":36,"cidade":"RJ"}
+]

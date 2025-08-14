@@ -1,0 +1,10 @@
+{"compra_id":101,"cliente_id":1,"produto":"Notebook","valor":3500,"data":1675123200000}
+{"compra_id":102,"cliente_id":2,"produto":"Celular","valor":2200,"data":1677542400000}
+{"compra_id":103,"cliente_id":3,"produto":"Tablet","valor":1500,"data":1680220800000}
+{"compra_id":104,"cliente_id":4,"produto":"Fone","valor":300,"data":1682812800000}
+{"compra_id":105,"cliente_id":5,"produto":"Monitor","valor":1200,"data":1685491200000}
+{"compra_id":106,"cliente_id":6,"produto":"Teclado","valor":250,"data":1688083200000}
+{"compra_id":107,"cliente_id":7,"produto":"Mouse","valor":180,"data":1690761600000}
+{"compra_id":108,"cliente_id":8,"produto":"Impressora","valor":800,"data":1693440000000}
+{"compra_id":109,"cliente_id":9,"produto":"C\u00e2mera","valor":900,"data":1696032000000}
+{"compra_id":110,"cliente_id":10,"produto":"SSD","valor":600,"data":1698710400000}

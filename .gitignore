@@ -1,0 +1,20 @@
+# Ignorar arquivos de dados das camadas
+bronze/parquet
+silver/**
+gold/**
+
+# Exceto scripts ou arquivos importantes (se houver)
+!bronze/**/*.py
+!silver/**/*.py
+!gold/**/*.py
+
+# Ignorar arquivos temporários e de sistema
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignorar ambientes virtuais
+.venv/
+.env/
+__pycache__/
