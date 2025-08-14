@@ -1,12 +1,12 @@
 # Ignorar arquivos de dados das camadas
-bronze/parquet
-silver/**
-gold/**
+app/bronze/parquet
+app/silver/**
+app/gold/**
 
 # Exceto scripts ou arquivos importantes (se houver)
-!bronze/**/*.py
-!silver/**/*.py
-!gold/**/*.py
+!app/bronze/**/*.py
+!app/silver/**/*.py
+!app/gold/**/*.py
 
 # Ignorar arquivos temporários e de sistema
 *.log

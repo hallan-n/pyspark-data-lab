@@ -7,17 +7,17 @@ Projeto de laboratório de dados utilizando PySpark, estruturado em camadas (bro
 ```
 main.py
 pyproject.toml
-bronze/
+app/bronze/
   clientes/
     clientes.csv
     clientes.json
   compras/
     compras.csv
     compras.json
-gold/
+app/gold/
   clientes_compras/
   dashboards/
-silver/
+app/silver/
   clientes/
   compras/
 ```
@@ -51,9 +51,9 @@ silver/
 3. Execute os scripts desejados:
    ```sh
    #Rodar cada camada individual
-   poetry run python3 bronze/bronze.py
-   poetry run python3 silver/silver.py
-   poetry run python3 gold/gold.py
+   poetry run python3 app/bronze/bronze.py
+   poetry run python3 app/silver/silver.py
+   poetry run python3 app/gold/gold.py
 
    # Roda fluxo completo de todas as camadas
    poetry run python3 main.py

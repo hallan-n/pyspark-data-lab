@@ -8,18 +8,18 @@ class Bronze(LayerFlow):
 
     def run(self):
         """Realiza a ingestão dos dados"""
-        clientes_csv = "bronze/clientes/clientes.csv"
-        compras_csv = "bronze/compras/compras.csv"
+        clientes_csv = "app/bronze/clientes/clientes.csv"
+        compras_csv = "app/bronze/compras/compras.csv"
         clientes_df = self.spark.read.csv(clientes_csv, header=True, inferSchema=True)
         compras_df = self.spark.read.csv(compras_csv, header=True, inferSchema=True)
-        clientes_df.write.mode("overwrite").parquet("bronze/parquet/clientes/")
-        compras_df.write.mode("overwrite").parquet("bronze/parquet/compras/")
+        clientes_df.write.mode("overwrite").parquet("app/bronze/parquet/clientes/")
+        compras_df.write.mode("overwrite").parquet("app/bronze/parquet/compras/")
         print("Ingestão concluída com sucesso.")
 
     def show(self):
         """Mostra os dados ingeridos"""
-        clientes_parquet = "bronze/parquet/clientes/"
-        compras_parquet = "bronze/parquet/compras/"
+        clientes_parquet = "app/bronze/parquet/clientes/"
+        compras_parquet = "app/bronze/parquet/compras/"
         clientes_df = self.spark.read.parquet(clientes_parquet)
         compras_df = self.spark.read.parquet(compras_parquet)
         clientes_df.show()
