@@ -11,13 +11,9 @@ bronze/
   clientes/
     clientes.csv
     clientes.json
-    clientes.orc
-    clientes.parquet
   compras/
     compras.csv
     compras.json
-    compras.orc
-    compras.parquet
 gold/
   clientes_compras/
   dashboards/
@@ -58,7 +54,7 @@ silver/
    poetry run python3 bronze/bronze.py
    poetry run python3 silver/silver.py
    poetry run python3 gold/gold.py
-   
+
    # Roda fluxo completo de todas as camadas
    poetry run python3 main.py
    ```

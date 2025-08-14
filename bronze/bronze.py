@@ -7,6 +7,7 @@ class Bronze(LayerFlow):
         self.spark = SparkSession.builder.appName("IngestaoBronze").getOrCreate()\
 
     def run(self):
+        """Realiza a ingestão dos dados"""
         clientes_csv = "bronze/clientes/clientes.csv"
         compras_csv = "bronze/compras/compras.csv"
         clientes_df = self.spark.read.csv(clientes_csv, header=True, inferSchema=True)
@@ -16,6 +17,7 @@ class Bronze(LayerFlow):
         print("Ingestão concluída com sucesso.")
 
     def show(self):
+        """Mostra os dados ingeridos"""
         clientes_parquet = "bronze/parquet/clientes/"
         compras_parquet = "bronze/parquet/compras/"
         clientes_df = self.spark.read.parquet(clientes_parquet)

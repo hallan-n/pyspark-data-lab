@@ -7,6 +7,7 @@ class Gold(LayerFlow):
         self.spark = SparkSession.builder.appName("CamadaGold").getOrCreate()
 
     def run(self):
+        """Analisa os dados tratados"""
         silver_path = "silver/clientes_compras/"
         df = self.spark.read.parquet(silver_path)
         gastos_por_cliente = df.groupBy("cliente_id", "nome").agg(
@@ -25,6 +26,7 @@ class Gold(LayerFlow):
         print("Camada Gold gerada com sucesso.")
 
     def show(self):
+        """Mostra os dados analisados"""
         path_gastos = "gold/gastos_por_cliente/"
         path_media = "gold/media_por_cidade/"
         path_produtos = "gold/produtos_mais_vendidos/"

@@ -8,6 +8,7 @@ class Silver(LayerFlow):
         self.spark = SparkSession.builder.appName("CamadaSilver").getOrCreate()
 
     def run(self):
+        """Faz a tratativa dos dados brutos"""
         clientes_path = "bronze/parquet/clientes/"
         compras_path = "bronze/parquet/compras/"
         clientes_df = self.spark.read.parquet(clientes_path)
@@ -21,7 +22,8 @@ class Silver(LayerFlow):
         clientes_compras_df.write.mode("overwrite").parquet("silver/clientes_compras/")
         print("Transformação concluída com sucesso e dados salvos na camada Silver.")
 
-    def show(self):  
+    def show(self):
+        """Mostra os dados tratados"""
         silver_path = "silver/clientes_compras/"
         df = self.spark.read.parquet(silver_path)
         df.show(truncate=False)
