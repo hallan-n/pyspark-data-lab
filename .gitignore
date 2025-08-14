@@ -13,6 +13,7 @@ app/gold/**
 *.tmp
 *.swp
 .DS_Store
+htmlCov
 
 # Ignorar ambientes virtuais
 .venv/
